@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
+  text-decoration: none;
+}
+.logo {
+  font-size: 2.5vw;
+  font-weight: 700;
+  color: #000;
+}
+.header {
+  width: 100%;
+  height: 100vh;
+}
+nav {
+  width: 100%;
+  height: 80px;
+  padding: 0 4vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #6666;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+}
+nav ul li a {
+  font-size: 1.2vw;
+  font-weight: 600;
+  color: #000;
+  padding: 5px 15px;
+  border-radius: 5px;
+  transition: .3s;
+
+}
+nav ul li a:hover {
+  background: #666666;
+  color: #fff;
+}
+nav i {
+  color: #fff;
+  font-size: 1.2vw;
+  font-weight: 800;
+  display: none;
+}
+nav .hero {
+  font-size: 1.2vw;
+  font-weight: 500;
+  padding: 5px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #0099ff;
+  color: #fff;
+}
+.content {
+  width: 100%;
+  height: calc(100% - 80px);
+  display: flex;
+}
+.content-left {
+  width: 55%;
+  height: 100%;
+  padding: 5vw 4vw;
+}
+.content-left h1 {
+  font-size: 4.2vw;
+  line-height: 4.4vw;
+}
+.content-left h1 span {
+  color: #0099ff;
+}
+.content-left p {
+  font-size: 1vw;
+  color: #000;
+  font-weight: 600;
+  width: 80%;
+  margin-top: 1.3vw;
+  margin-bottom: 2vw;
+}
+.content-left button {
+  font-size: 1.5vw;
+  padding: 0.8vw 2vw;
+  border: none;
+  border-radius: 5px;
+  background-color: #0099ff;
+  color: #fff;
+}
+.content-right {
+  width: 45%;
+  height: 80%;
+}
+.content-right img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+@media(max-width:600px) {
+  .logo {
+    font-size: 8vw;
+  }
+  nav {
+    padding: 0 6vw;
+    height: 70px;
+  }
+  nav ul li a, nav .hero {
+    display: none;
+  }
+  nav i {
+    font-size: 6vw;
+    display: block;
+    color: #000;
+  }
+  .content {
+    height: calc(100% - 70px);
+    flex-direction: column;
+  }
+  .content-left {
+    width: 100%;
+    height: 45%;
+  }
+  .content-left h1 {
+    font-size: 10vw;
+    line-height: 11vw;
+    padding: 4vw 2vw;
+  }
+  .content-left p {
+    padding: 0vw 2vw;
+    font-size: 3vw;
+    width: 90%;
+    margin-top: 2vw;
+    margin-bottom: 6vw;
+  }
+  .content-left button {
+    padding: 3vw 6vw;
+    font-size: 3.5vw;
+    font-weight: 500;
+    margin-left: 2vw;
+  }
+  .content-right {
+    width: 100%;
+    height: 45%;
+    z-index: -1;
+
+  }
+}
